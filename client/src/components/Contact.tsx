@@ -33,8 +33,8 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="text-white font-semibold">Email</h4>
-                  <a href="mailto:yourname@example.com" className="text-purple-400 hover:text-purple-300 transition-colors">
-                    yourname@example.com
+                  <a href="mailto:adithiayamuruganks@gmail.com" target="_blank" rel="noopener noreferrer" className="text-purple-400 hover:text-purple-300 transition-colors">
+                    adithiayamuruganks@gmail.com
                   </a>
                 </div>
               </div>
@@ -45,8 +45,8 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="text-white font-semibold">LinkedIn</h4>
-                  <a href="#" className="text-blue-400 hover:text-blue-300 transition-colors">
-                    linkedin.com/in/yourprofile
+                  <a href="https://www.linkedin.com/in/adithiaya-murugan-k-s" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 transition-colors">
+                    adithiaya-murugan-k-s
                   </a>
                 </div>
               </div>
@@ -57,8 +57,8 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="text-white font-semibold">GitHub</h4>
-                  <a href="#" className="text-gray-400 hover:text-gray-300 transition-colors">
-                    github.com/yourusername
+                  <a href="https://github.com/adithiyaks" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-gray-300 transition-colors">
+                    adithiyaks
                   </a>
                 </div>
               </div>

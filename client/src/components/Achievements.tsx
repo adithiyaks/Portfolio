@@ -23,6 +23,27 @@ const Achievements = () => {
       color: 'from-orange-400 to-red-500',
       rank: '3rd',
     },
+
+    {
+      title: '1st Prize - Idea Pitching',
+      event: "Torq'25",
+      organization: "Loyola-ICAM College of Engineering and Technology",
+      date: '2025',
+      description: 'Awarded for pitching an innovative safety application that addresses real-world women safety concerns.',
+      icon: Trophy,
+      color: 'from-red-700 to-yellow-300',
+      rank: '1st',
+    },
+    {
+      title: '3rd Prize-Head to Head Coding Battle',
+      event: "Xplore'25",
+      organization: "Loyola-ICAM College of Engineering and Technology",
+      date: '2025',
+      description: 'Secured 3rd place in a Head to Head Coding Challenge after clearing multiple rounds of problem-solving and algorithmic tasks.',
+      icon: Trophy,
+      color: 'from-red-700 to-yellow-300',
+      rank: '1st',
+    },
   ];
 
   return (
