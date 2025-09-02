@@ -7,8 +7,8 @@ const Skills = () => {
       title: 'Programming Languages',
       icon: Code,
       skills: [
-        { name: 'Python', level: 90, description: 'UI design, backend logic, data handling' },
-        { name: 'C#', level: 70, description: 'Unity 3D game development' },
+        { name: 'Python', level: 95, description: 'UI design, backend logic, data handling' },
+        { name: 'C#', level: 55, description: 'Unity 3D game development' },
         { name: 'Dart', level: 85, description: 'Flutter app development' },
         { name: 'SQL', level: 80, description: 'Database queries and management' },
       ],
@@ -18,8 +18,8 @@ const Skills = () => {
       icon: Smartphone,
       skills: [
         { name: 'Flutter', level: 85, description: 'Cross-platform app development' },
-        { name: 'Unity 3D', level: 70, description: 'Basic game development' },
-        { name: 'MySQL', level: 80, description: 'Database integration' },
+        { name: 'Unity 3D', level: 65, description: 'Basic game development' },
+        { name: 'Express.js', level: 70, description: 'Database integration' },
         { name: 'Arduino', level: 75, description: 'IoT and hardware programming' },
       ],
     },
@@ -27,10 +27,10 @@ const Skills = () => {
       title: 'Specialized Skills',
       icon: Eye,
       skills: [
-        { name: 'AI & Machine Learning', level: 75, description: 'Computer vision fundamentals' },
+        { name: 'AI & Machine Learning', level: 70, description: 'Computer vision fundamentals' },
         { name: 'Image Classification', level: 70, description: 'AI-powered recognition systems' },
         { name: 'Photoshop', level: 60, description: 'Basic graphic design skills' },
-        { name: 'Canva', level: 90, description: 'Professional design proficiency' },
+        { name: 'Canva', level: 100, description: 'Professional design proficiency' },
       ],
     },
   ];
