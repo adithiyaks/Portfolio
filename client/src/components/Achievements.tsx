@@ -4,16 +4,6 @@ import { Trophy, Award, Calendar, MapPin } from 'lucide-react';
 const Achievements = () => {
   const achievements = [
     {
-      title: '1st Prize - UI Design',
-      event: 'Noctivus Tech Symposium',
-      organization: 'Velammal Engineering College',
-      date: '2024',
-      description: 'Recognized for exceptional user interface design skills and innovative approach to user experience.',
-      icon: Trophy,
-      color: 'from-yellow-400 to-orange-500',
-      rank: '1st',
-    },
-    {
       title: '3rd Prize - SheSecure App',
       event: "St. Joseph's College Hackathon 2K25",
       organization: "St. Joseph's College",
@@ -32,6 +22,16 @@ const Achievements = () => {
       description: 'Awarded for pitching an innovative safety application that addresses real-world women safety concerns.',
       icon: Trophy,
       color: 'from-red-700 to-yellow-300',
+      rank: '1st',
+    },
+    {
+      title: '1st Prize - UI Design',
+      event: 'Noctivus Tech Symposium',
+      organization: 'Velammal Engineering College',
+      date: '2025',
+      description: 'Recognized for exceptional user interface design skills and innovative approach to user experience.',
+      icon: Trophy,
+      color: 'from-yellow-400 to-orange-500',
       rank: '1st',
     },
     {
