@@ -67,17 +67,18 @@ const Contact = () => {
             <div className="bg-gray-800 p-6 rounded-xl border border-gray-700 max-w-md mx-auto">
               <h4 className="text-white font-semibold mb-3">Available For</h4>
               <ul className="space-y-2 text-gray-300">
+                
                 <li className="flex items-center space-x-2">
                   <div className="w-2 h-2 bg-green-400 rounded-full"></div>
-                  <span>Full-stack development projects</span>
+                  <span>Full-stack Mobile app development (Flutter)</span>
                 </li>
                 <li className="flex items-center space-x-2">
                   <div className="w-2 h-2 bg-green-400 rounded-full"></div>
-                  <span>Mobile app development (Flutter)</span>
+                  <span>Web design projects</span>
                 </li>
                 <li className="flex items-center space-x-2">
                   <div className="w-2 h-2 bg-green-400 rounded-full"></div>
-                  <span>AI/ML consultation and development</span>
+                  <span>Graphic Design</span>
                 </li>
                 <li className="flex items-center space-x-2">
                   <div className="w-2 h-2 bg-green-400 rounded-full"></div>

@@ -7,8 +7,8 @@ const Skills = () => {
       title: 'Programming Languages',
       icon: Code,
       skills: [
-        { name: 'Python', level: 95, description: 'UI design, backend logic, data handling' },
-        { name: 'C#', level: 55, description: 'Unity 3D game development' },
+        { name: 'Python', level: 95, description: 'Data structure, algorithms and OOPs' },
+        { name: 'Java', level: 55, description: 'Unity 3D game development' },
         { name: 'Dart', level: 85, description: 'Flutter app development' },
         { name: 'SQL', level: 80, description: 'Database queries and management' },
       ],
@@ -28,10 +28,10 @@ const Skills = () => {
       icon: Eye,
       skills: [
         { name: 'AI & Machine Learning', level: 70, description: 'Computer vision fundamentals' },
-        { name: 'Image Classification', level: 70, description: 'AI-powered recognition systems' },
         { name: 'Photoshop', level: 60, description: 'Basic graphic design skills' },
-        { name: 'Canva', level: 100, description: 'Professional design proficiency' },
-      ],
+        { name: 'Figma & Canva', level: 95, description: 'Professional design proficiency' },
+        { name: 'Blender', level: 40, description: 'Basic 3D modeiling and animation' },
+          ],
     },
   ];
 
