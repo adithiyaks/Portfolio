@@ -12,6 +12,22 @@ const Projects = () => {
       image: '/images/shesecure.png',
     },
     {
+      title: 'VisionX',
+      description: 'AI-powered smart glasses designed to assist visually impaired individuals with real-time navigation, obstacle detection, and environment awareness.',
+      technologies: ['Python', 'Computer Vision', 'AI/ML', 'IoT', 'Raspberry Pi'],
+      status: 'Award Winning',
+      gradient: 'from-cyan-500 to-blue-600',
+      image: '/images/visionx.jpg',
+    },
+    {
+      title: 'Unmuted',
+      description: 'Smart wearable tech that translates hand signs into real-time audio, bridging communication gaps for the deaf and mute community.',
+      technologies: ['Python', 'TensorFlow', 'AI/ML', 'Arduino', 'IoT'],
+      status: 'Award Winning',
+      gradient: 'from-violet-500 to-purple-600',
+      image: '/images/unmuted.png',
+    },
+    {
       title: 'Crop Raiding Solutions',
       description: 'Working prototype that detects animals using AI and emits species-specific sound deterrents to protect farmland.',
       technologies: ['Python', 'Computer Vision', 'AI/ML', 'IoT', 'Arduino'],

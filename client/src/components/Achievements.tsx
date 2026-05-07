@@ -4,6 +4,26 @@ import { Trophy, Award, Calendar, MapPin } from 'lucide-react';
 const Achievements = () => {
   const achievements = [
     {
+      title: '3rd Prize - Unmuted',
+      event: 'THREX Hackathon',
+      organization: 'SRM Institute of Science and Technology, Kattankulathur',
+      date: '2025',
+      description: 'Awarded 3rd prize for developing Unmuted — a smart wearable cap that translates hand signs into real-time audio, enabling seamless communication for the deaf and mute community.',
+      icon: Trophy,
+      color: 'from-violet-500 to-purple-600',
+      rank: '3rd',
+    },
+    {
+      title: '2nd Prize - VisionX AI Smart Glasses',
+      event: 'Vvortex Hackathon',
+      organization: 'VIT Chennai',
+      date: '2025',
+      description: 'Secured 2nd place for building VisionX overnight — AI-powered smart glasses that assist blind individuals with real-time navigation and obstacle detection using computer vision.',
+      icon: Trophy,
+      color: 'from-cyan-400 to-blue-600',
+      rank: '2nd',
+    },
+    {
       title: '3rd Prize - SheSecure App',
       event: "St. Joseph's College Hackathon 2K25",
       organization: "St. Joseph's College",
@@ -69,7 +89,7 @@ const Achievements = () => {
               >
                 {/* Background Gradient */}
                 <div className={`absolute top-0 right-0 w-32 h-32 bg-gradient-to-br ${achievement.color} opacity-10 rounded-full transform translate-x-16 -translate-y-16 group-hover:scale-110 transition-transform duration-300`}></div>
-                
+
                 {/* Rank Badge */}
                 <div className={`absolute top-6 right-6 w-12 h-12 bg-gradient-to-br ${achievement.color} rounded-full flex items-center justify-center text-white font-bold shadow-lg`}>
                   {achievement.rank}
