@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 const CursorFollower = () => {
   const [position, setPosition] = useState({ x: -100, y: -100 });
   const [isVisible, setIsVisible] = useState(false);
-  const [isHovered, setIsHovered] = useState(false);
+  const [hoverKind, setHoverKind] = useState<'button' | 'link' | null>(null);
 
   useEffect(() => {
     // Hide custom cursor on mobile / touch devices
@@ -16,17 +16,19 @@ const CursorFollower = () => {
       if (!isVisible) setIsVisible(true);
 
       const target = e.target as HTMLElement | null;
-      if (
-        target &&
+      const isButton =
+        !!target &&
         (target.tagName === 'BUTTON' ||
-          target.tagName === 'A' ||
           target.closest('button') ||
-          target.closest('a') ||
-          target.getAttribute('role') === 'button')
-      ) {
-        setIsHovered(true);
+          target.getAttribute('role') === 'button');
+      const isLink = !!target && (target.tagName === 'A' || target.closest('a'));
+
+      if (isButton) {
+        setHoverKind('button');
+      } else if (isLink) {
+        setHoverKind('link');
       } else {
-        setIsHovered(false);
+        setHoverKind(null);
       }
     };
 
@@ -58,7 +60,7 @@ const CursorFollower = () => {
         {/* Mouse pointer arrow icon */}
         <svg
           className={`w-8 h-8 text-black drop-shadow-sm transition-transform duration-150 ${
-            isHovered ? 'scale-125 rotate-[-12deg]' : ''
+            hoverKind === 'link' ? 'rotate-[-12deg]' : ''
           }`}
           viewBox="0 0 24 24"
           fill="currentColor"
@@ -71,7 +73,7 @@ const CursorFollower = () => {
         {/* Purple "You" Badge - pushed down below pointer tip */}
         <div
           className={`ml-3 mt-1 px-2.5 py-1 bg-[#7C3AED] text-white text-xs font-bold rounded-md shadow-md flex items-center justify-center transition-all duration-150 ${
-            isHovered ? 'scale-110 bg-[#6D28D9] shadow-lg' : ''
+            hoverKind === 'link' ? 'bg-[#6D28D9] shadow-lg' : ''
           }`}
         >
           You
