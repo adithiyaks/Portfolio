@@ -1,108 +1,122 @@
-// import React from 'react';
-import { Shield, Zap, ShoppingCart, Car, Bot, Leaf, BookOpen } from 'lucide-react';
+import React from 'react';
+import { ExternalLink, Github, Code } from 'lucide-react';
 
 const Projects = () => {
   const projects = [
     {
       title: 'SheSecure',
       description: 'Real-time SOS and community safety app designed to help women connect and respond quickly to emergency situations.',
-      technologies: ['Flutter', 'Firebase', 'Real-time Database', 'GPS'],
-      status: 'Award Winning',
-      gradient: 'from-pink-500 to-red-500',
+      technologies: ['Flutter', 'Firebase', 'Real-time DB', 'GPS'],
+      status: 'AWARD WINNING',
+      statusColor: 'bg-emerald-50 text-emerald-700 border-emerald-200',
+      role: 'Mobile Dev',
+      team: 'Team of 3',
+      type: 'Flutter App',
       image: '/images/shesecure.png',
     },
     {
-      title: 'VisionX',
-      description: 'AI-powered smart glasses designed to assist visually impaired individuals with real-time navigation, obstacle detection, and environment awareness.',
-      technologies: ['Python', 'Computer Vision', 'AI/ML', 'IoT', 'Raspberry Pi'],
-      status: 'Award Winning',
-      gradient: 'from-cyan-500 to-blue-600',
+      title: 'VisionX AI Smart Glasses',
+      description: 'AI-powered smart glasses designed to assist visually impaired individuals with real-time navigation and obstacle detection.',
+      technologies: ['Python', 'Computer Vision', 'AI/ML', 'IoT'],
+      status: 'AWARD WINNING',
+      statusColor: 'bg-emerald-50 text-emerald-700 border-emerald-200',
+      role: 'AI Researcher',
+      team: 'Team of 4',
+      type: 'IoT + AI',
       image: '/images/visionx.jpg',
     },
     {
       title: 'Unmuted',
-      description: 'Smart wearable tech that translates hand signs into real-time audio, bridging communication gaps for the deaf and mute community.',
-      technologies: ['Python', 'TensorFlow', 'AI/ML', 'Arduino', 'IoT'],
-      status: 'Award Winning',
-      gradient: 'from-violet-500 to-purple-600',
+      description: 'Smart wearable tech that translates hand signs into real-time audio, bridging communication gaps for the deaf community.',
+      technologies: ['Python', 'TensorFlow', 'AI/ML', 'Arduino'],
+      status: 'AWARD WINNING',
+      statusColor: 'bg-emerald-50 text-emerald-700 border-emerald-200',
+      role: 'Hardware & ML',
+      team: 'Team of 4',
+      type: 'Wearable Tech',
       image: '/images/unmuted.png',
     },
     {
       title: 'Crop Raiding Solutions',
       description: 'Working prototype that detects animals using AI and emits species-specific sound deterrents to protect farmland.',
-      technologies: ['Python', 'Computer Vision', 'AI/ML', 'IoT', 'Arduino'],
-      status: 'Prototype',
-      gradient: 'from-green-500 to-emerald-500',
+      technologies: ['Python', 'Computer Vision', 'AI/ML', 'Arduino'],
+      status: 'PROTOTYPE',
+      statusColor: 'bg-blue-50 text-blue-700 border-blue-200',
+      role: 'Lead Developer',
+      team: 'Solo',
+      type: 'AgriTech AI',
       image: '/images/crop-raiding.png',
       link: 'https://github.com/adithiyaks/Crop-Raiding-Soluions.git',
     },
     {
-      title: 'Full-Stack E-Commerce App',
-      description: 'Complete e-commerce solution built with Flutter, focusing on learning the entire app development lifecycle.',
-      technologies: ['Flutter', 'Node.js', 'MongoDB', 'Payment Gateway'],
-      status: 'In Development',
-      gradient: 'from-blue-500 to-indigo-500',
-      image: '/images/ecommerce.png',
-    },
-    {
-      title: 'Obstacle-Avoiding Arduino Car',
-      description: 'Autonomous vehicle prototype using ultrasonic sensors and Arduino programming for intelligent navigation.',
-      technologies: ['Arduino', 'C++', 'Ultrasonic Sensors', 'Motor Control'],
-      status: 'Completed',
-      gradient: 'from-purple-500 to-violet-500',
-      image: 'https://i0.wp.com/srituhobby.com/wp-content/uploads/2021/04/blogss.jpg?w=1280&ssl=1',
-    },
-    {
-      title: 'Memora',
-      description: 'Memora is a clean, minimal flashcards app that helps users quickly create, flip, and review cards for efficient learning and memory recall.',
-      technologies: ['Flutter', 'Dart','Hive','GetX','Material Design'],
-      status: 'Completed',
-      gradient: 'from-blue-400 to-cyan-500',
+      title: 'Memora Flashcards',
+      description: 'Clean, minimal flashcards app helping users create, flip, and review cards for efficient learning and memory recall.',
+      technologies: ['Flutter', 'Dart', 'Hive', 'GetX'],
+      status: 'COMPLETED',
+      statusColor: 'bg-purple-50 text-purple-700 border-purple-200',
+      role: 'Mobile Dev',
+      team: 'Solo',
+      type: 'Open Source',
       image: '/images/memora.png',
       link: 'https://github.com/adithiyaks/Memora.git',
     },
     {
-      title: 'Ecoverse',
-      description: 'A platform that provides the complete details of the hackathon ECOVERSE\'26 and allows participants to register and explore event tracks.',
+      title: 'Ecoverse Hackathon',
+      description: "Platform providing complete details of ECOVERSE'26 hackathon, allowing participants to register and explore tracks.",
       technologies: ['React', 'Typescript', 'TailwindCSS', 'Chart.js'],
-      status: 'Completed',
-      gradient: 'from-green-400 to-emerald-600',
+      status: 'WENT LIVE',
+      statusColor: 'bg-emerald-50 text-emerald-700 border-emerald-200',
+      role: 'Frontend Dev',
+      team: 'Team of 3',
+      type: 'Web Platform',
       image: '/images/ecoverse.png',
       link: 'https://github.com/Ayush021-Dev/ecoverse.git',
     },
     {
-      title: 'Mediculture',
-      description: 'Mediculture is a smart healthcare app for instant medicine delivery, doctor consultations, and real-time emergency support.',
-      technologies: ['Flutter', 'MongoDB','PostgreSQL', 'Node.js'],
-      status: 'In Development',
-      gradient: 'from-red-500 to-pink-500',
+      title: 'Mediculture Healthcare',
+      description: 'Smart healthcare app for instant medicine delivery, doctor consultations, and real-time emergency support.',
+      technologies: ['Flutter', 'MongoDB', 'PostgreSQL', 'Node.js'],
+      status: 'IN DEVELOPMENT',
+      statusColor: 'bg-rose-50 text-rose-700 border-rose-200',
+      role: 'Full-Stack Dev',
+      team: 'Team of 4',
+      type: 'Health App',
       image: '/images/mediculture.png',
       link: 'https://github.com/JCKawin/Mediculture.git',
     },
     {
       title: 'Who Un-followed Me!?',
-      description: 'Privacy-first SPA that compares your Instagram followers vs following locally in the browser. No uploads, no servers.',
-      technologies: ['React', 'Node.js', 'Backend logic', 'TailwindCSS'],
-      status: 'Completed',
-      gradient: 'from-purple-500 to-indigo-600',
+      description: 'Privacy-first SPA that compares your Instagram followers vs following locally in the browser. No servers.',
+      technologies: ['React', 'Node.js', 'TailwindCSS'],
+      status: 'COMPLETED',
+      statusColor: 'bg-purple-50 text-purple-700 border-purple-200',
+      role: 'Solo Creator',
+      team: 'Solo',
+      type: 'Web Utility',
       image: '/images/who-unfollowed-me.png',
       link: 'https://github.com/adithiyaks/who-unfollowed-me.git',
     },
     {
       title: 'VisionPay',
-      description: 'VisionPay is a Flutter-based proof-of-concept app that enables seamless, hands-free payments using voice, gestures, and biometric security , assisting visually impaired users.',
+      description: 'Proof-of-concept app enabling hands-free payments using voice and biometric security for visually impaired users.',
       technologies: ['Flutter', 'Node.js', 'MongoDB', 'Stripe API'],
-      status: 'Completed',
-      gradient: 'from-green-500 to-teal-500',
+      status: 'COMPLETED',
+      statusColor: 'bg-purple-50 text-purple-700 border-purple-200',
+      role: 'Lead Developer',
+      team: 'Team of 3',
+      type: 'FinTech App',
       image: '/images/visionpay.jpg',
       link: 'https://github.com/adithiyaks/visionpay.git',
     },
     {
-      title: 'LeafSense',
-      description: 'AI & ML hackathon project built fully within small range, capable of detecting plant health using leaf analysis.',
-      technologies: ['Python', 'TensorFlow', 'AI/ML', 'Image Classification'],
-      status: 'Hackathon Project (Completed)',
-      gradient: 'from-green-400 to-lime-500',
+      title: 'LeafSense Plant AI',
+      description: 'AI & ML project built fully within small range, capable of detecting plant health using leaf image analysis.',
+      technologies: ['Python', 'TensorFlow', 'AI/ML', 'OpenCV'],
+      status: 'COMPLETED',
+      statusColor: 'bg-purple-50 text-purple-700 border-purple-200',
+      role: 'ML Developer',
+      team: 'Team of 3',
+      type: 'Agri AI',
       image: '/images/leafsense.png',
       link: 'https://github.com/JCKawin/LeafSense.git',
     },
@@ -110,115 +124,166 @@ const Projects = () => {
       title: 'JEE Tracker',
       description: 'A vibe-coded website designed for academics, helping students track study progress, schedules, and resources.',
       technologies: ['React', 'Node.js', 'Firebase', 'TailwindCSS'],
-      status: 'Completed',
-      gradient: 'from-orange-500 to-yellow-500',
+      status: 'COMPLETED',
+      statusColor: 'bg-purple-50 text-purple-700 border-purple-200',
+      role: 'Web Developer',
+      team: 'Solo',
+      type: 'EduTech',
       image: '/images/jee-tracker.png',
       link: 'https://github.com/adithiyaks/jee-tracker27.git',
     },
     {
-      title: 'SKANY Chatbot',
-      description: 'Hackathon project focused on chatbot UI design. Not a complete version but demonstrates conversational flow and UI design.',
+      title: 'SKANY Chatbot UI',
+      description: 'Hackathon project focused on chatbot UI design, demonstrating conversational flow and interactive chat components.',
       technologies: ['React', 'Figma', 'Frontend UI'],
-      status: 'Hackathon Project (UI Only)',
-      gradient: 'from-teal-500 to-cyan-500',
+      status: 'UI PROTOTYPE',
+      statusColor: 'bg-blue-50 text-blue-700 border-blue-200',
+      role: 'UI Designer',
+      team: 'Team of 3',
+      type: 'Chat Interface',
       image: '/images/skanny-chatbot.png',
       link: 'https://github.com/adithiyaks/CHATBOT-SKANY.git',
     },
     {
+      title: 'Obstacle-Avoiding Car',
+      description: 'Autonomous vehicle prototype using ultrasonic sensors and Arduino programming for intelligent navigation.',
+      technologies: ['Arduino', 'C++', 'Ultrasonic Sensors'],
+      status: 'COMPLETED',
+      statusColor: 'bg-purple-50 text-purple-700 border-purple-200',
+      role: 'Hardware Dev',
+      team: 'Solo',
+      type: 'Robotics',
+      image: 'https://i0.wp.com/srituhobby.com/wp-content/uploads/2021/04/blogss.jpg?w=1280&ssl=1',
+    },
+    {
+      title: 'Full-Stack E-Commerce',
+      description: 'Complete e-commerce solution built with Flutter, focusing on learning the mobile shopping lifecycle.',
+      technologies: ['Flutter', 'Node.js', 'MongoDB'],
+      status: 'IN DEVELOPMENT',
+      statusColor: 'bg-rose-50 text-rose-700 border-rose-200',
+      role: 'Mobile Dev',
+      team: 'Solo',
+      type: 'Shopping App',
+      image: '/images/ecommerce.png',
+    },
+    {
       title: 'Expense Tracker',
-      description: 'A school project built completely using Python with Tkinter for UI and Matplotlib for data visualization of expenses.',
+      description: 'Python desktop application built with Tkinter for UI and Matplotlib for data visualization of financial expenses.',
       technologies: ['Python', 'Tkinter', 'Matplotlib'],
-      status: 'Completed',
-      gradient: 'from-pink-400 to-purple-500',
+      status: 'COMPLETED',
+      statusColor: 'bg-purple-50 text-purple-700 border-purple-200',
+      role: 'Python Dev',
+      team: 'Solo',
+      type: 'Desktop App',
       image: '/images/expensetracker.png',
       link: 'https://github.com/adithiyaks/EXPENSE-TRACKER.git',
     },
   ];
 
-  const getStatusColor = (status: string) => {
-    switch (status) {
-      case 'Award Winning': return 'bg-yellow-500';
-      case 'In Development': return 'bg-blue-500';
-      case 'Prototype': return 'bg-green-500';
-      case 'Completed': return 'bg-purple-500';
-      case 'Hackathon Project (UI Only)': return 'bg-teal-500';
-      case 'Hackathon Project (Completed)': return 'bg-lime-500';
-      default: return 'bg-gray-500';
-    }
-  };
-
   return (
-    <section id="projects" className="py-20 bg-gray-900">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6">
+    <section id="projects" className="py-24 bg-white relative">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
+        {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
+          <span className="text-xs sm:text-sm font-bold tracking-[0.2em] text-[#7C3AED] uppercase block mb-3">
+            PORTFOLIO SHOWCASE
+          </span>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-gray-900 tracking-tight mb-4">
             Featured Projects
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-purple-600 to-blue-600 mx-auto rounded-full"></div>
-          <p className="text-gray-400 mt-6 max-w-2xl mx-auto">
-            A collection of projects that showcase my technical skills and passion for solving real-world problems
+          <div className="w-16 h-1 bg-[#7C3AED] mx-auto rounded-full mb-6" />
+          <p className="text-gray-600 max-w-2xl mx-auto text-base">
+            Product Designer and Researcher, blending productivity, experience, and play through design & code.
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-8">
-          {projects.map((project, index) => {
-            const Wrapper = project.link ? 'a' : 'div';
-            const disabled = !project.link;
-
-            return (
-              <Wrapper
-                key={index}
-                href={project.link}
-                target={project.link ? '_blank' : undefined}
-                rel={project.link ? 'noreferrer' : undefined}
-                className={`block h-full focus:outline-none focus-visible:ring-2 focus-visible:ring-purple-400 rounded-xl ${disabled ? 'cursor-not-allowed' : ''}`}
-              >
-                <div className={`bg-gray-800 rounded-xl overflow-hidden shadow-lg border border-gray-700 transition-all duration-300 transform group h-full ${disabled ? 'cursor-not-allowed opacity-95' : 'hover:border-purple-500 hover:scale-105'}`}>
-                  {/* Gradient bar */}
-                  <div className={`h-2 bg-gradient-to-r ${project.gradient}`}></div>
-
-                  {/* Project Image */}
-                  <div className="relative h-56 md:h-64 bg-gray-900 overflow-hidden">
-                    <img
-                      src={project.image}
-                      alt={project.title}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-gray-900/70 to-transparent pointer-events-none"></div>
-                    <div className="absolute top-4 right-4">
-                      <span className={`px-3 py-1 rounded-full text-xs font-semibold text-white ${getStatusColor(project.status)}`}>
-                        {project.status}
-                      </span>
-                    </div>
-                  </div>
-
-                  {/* Project Content */}
-                  <div className="p-8">
-                    <h3 className="text-2xl font-bold text-white group-hover:text-purple-400 transition-colors mb-4">
-                      {project.title}
-                    </h3>
-
-                    <p className="text-gray-300 mb-6 leading-relaxed">
-                      {project.description}
-                    </p>
-
-                    <div className="flex flex-wrap gap-2">
-                      {project.technologies.map((tech, techIndex) => (
-                        <span
-                          key={techIndex}
-                          className="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm border border-gray-600"
-                        >
-                          {tech}
-                        </span>
-                      ))}
-                    </div>
+        {/* 3-Column Grid Layout */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {projects.map((project, index) => (
+            <div
+              key={index}
+              className="bg-white rounded-3xl border border-gray-200/90 p-6 hover:border-purple-300 hover:shadow-xl transition-all duration-300 flex flex-col justify-between h-full group"
+            >
+              <div>
+                {/* Image Container: Full object-cover fit */}
+                <div className="w-full h-48 sm:h-52 bg-purple-50/50 rounded-2xl border border-gray-100 overflow-hidden flex items-center justify-center mb-6 relative">
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform duration-300"
+                    onError={(e) => {
+                      const target = e.target as HTMLImageElement;
+                      target.style.display = 'none';
+                    }}
+                  />
+                  <div className="absolute top-3 right-3 z-10">
+                    <span className={`px-2.5 py-0.5 rounded-full text-[10px] font-extrabold tracking-wider border flex items-center space-x-1 shadow-sm ${project.statusColor}`}>
+                      <span className="w-1.5 h-1.5 rounded-full bg-current" />
+                      <span>{project.status}</span>
+                    </span>
                   </div>
                 </div>
-              </Wrapper>
-            );
-          })}
-        </div>
 
+                {/* Title */}
+                <h3 className="text-xl font-black text-gray-900 group-hover:text-[#7C3AED] transition-colors tracking-tight mb-2">
+                  {project.title}
+                </h3>
+
+                {/* Description */}
+                <p className="text-gray-600 text-xs sm:text-sm leading-relaxed mb-4 line-clamp-3">
+                  {project.description}
+                </p>
+
+                {/* Compact 3-Column Metadata Grid */}
+                <div className="w-full bg-[#FAFAFA] border border-gray-200/70 rounded-xl p-3 mb-4 grid grid-cols-3 text-center">
+                  <div>
+                    <div className="text-[9px] font-semibold text-gray-400 uppercase tracking-wider mb-0.5">Role</div>
+                    <div className="text-[11px] font-bold text-gray-900 truncate">{project.role}</div>
+                  </div>
+                  <div className="border-x border-gray-200 px-1">
+                    <div className="text-[9px] font-semibold text-gray-400 uppercase tracking-wider mb-0.5">Team</div>
+                    <div className="text-[11px] font-bold text-gray-900 truncate">{project.team}</div>
+                  </div>
+                  <div>
+                    <div className="text-[9px] font-semibold text-gray-400 uppercase tracking-wider mb-0.5">Type</div>
+                    <div className="text-[11px] font-bold text-gray-900 truncate">{project.type}</div>
+                  </div>
+                </div>
+
+                {/* Tech Tags */}
+                <div className="flex flex-wrap gap-1.5 mb-6">
+                  {project.technologies.map((tech, techIndex) => (
+                    <span
+                      key={techIndex}
+                      className="px-2 py-0.5 bg-gray-100 text-gray-700 text-[11px] font-medium rounded-md"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+              </div>
+
+              {/* Action Button */}
+              <div className="w-full pt-2">
+                {project.link ? (
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full py-2.5 bg-[#18181B] text-white text-xs font-semibold rounded-xl hover:bg-black shadow-sm transition-all flex items-center justify-center space-x-2 transform hover:-translate-y-0.5"
+                  >
+                    <Github className="w-3.5 h-3.5" />
+                    <span>View Project</span>
+                  </a>
+                ) : (
+                  <div className="w-full py-2.5 bg-gray-100 text-gray-400 text-xs font-semibold rounded-xl flex items-center justify-center space-x-2 cursor-not-allowed">
+                    <span>Internal Showcase</span>
+                  </div>
+                )}
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );

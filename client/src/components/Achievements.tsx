@@ -1,144 +1,147 @@
 import React from 'react';
-import { Trophy, Award, Calendar, MapPin } from 'lucide-react';
+import { Trophy, Calendar, MapPin } from 'lucide-react';
 
 const Achievements = () => {
   const achievements = [
     {
       title: '3rd Prize - Unmuted',
-      event: 'THREX Hackathon',
-      organization: 'SRM Institute of Science and Technology, Kattankulathur',
+      event: 'THREX Hackathon 2026',
+      organization: 'SRM Institute of Science and Technology',
       date: '2026',
-      description: 'Awarded 3rd prize for developing Unmuted — a smart wearable cap that translates hand signs into real-time audio, enabling seamless communication for the deaf and mute community.',
-      icon: Trophy,
-      color: 'from-violet-500 to-purple-600',
-      rank: '3rd',
+      description: 'Awarded 3rd prize for developing Unmuted — a smart wearable tech translating hand signs into real-time audio for the deaf and mute community.',
+      rank: '3rd Rank',
+      rankBg: 'bg-purple-50 text-[#7C3AED] border-purple-200',
     },
     {
       title: '2nd Prize - VisionX AI Smart Glasses',
-      event: 'Vvortex Hackathon',
+      event: 'Vvortex Hackathon 2026',
       organization: 'VIT Chennai',
       date: '2026',
-      description: 'Secured 2nd place for building VisionX overnight — AI-powered smart glasses that assist blind individuals with real-time navigation and obstacle detection using computer vision.',
-      icon: Trophy,
-      color: 'from-cyan-400 to-blue-600',
-      rank: '2nd',
+      description: 'Secured 2nd place for building VisionX overnight — AI smart glasses assisting blind individuals with computer vision navigation.',
+      rank: '2nd Rank',
+      rankBg: 'bg-blue-50 text-blue-700 border-blue-200',
     },
     {
       title: '3rd Prize - SheSecure App',
       event: "St. Joseph's College Hackathon 2K25",
-      organization: "St. Joseph's College",
+      organization: "St. Joseph's College of Engineering",
       date: '2025',
-      description: 'Awarded for developing an innovative safety application that addresses real-world women safety concerns.',
-      icon: Award,
-      color: 'from-orange-400 to-red-500',
-      rank: '3rd',
+      description: 'Awarded for developing an innovative safety application addressing real-world women safety concerns with real-time SOS.',
+      rank: '3rd Rank',
+      rankBg: 'bg-purple-50 text-[#7C3AED] border-purple-200',
     },
-
     {
       title: '1st Prize - Idea Pitching',
       event: "Torq'25",
       organization: "Loyola-ICAM College of Engineering and Technology",
       date: '2025',
-      description: 'Awarded for pitching an innovative safety application that addresses real-world women safety concerns.',
-      icon: Trophy,
-      color: 'from-red-700 to-yellow-300',
-      rank: '1st',
+      description: 'Awarded 1st place for pitching an innovative tech framework for women safety and emergency response.',
+      rank: '1st Rank',
+      rankBg: 'bg-amber-50 text-amber-700 border-amber-200',
     },
     {
       title: '1st Prize - UI Design',
       event: 'Noctivus Tech Symposium',
       organization: 'Velammal Engineering College',
       date: '2025',
-      description: 'Recognized for exceptional user interface design skills and innovative approach to user experience.',
-      icon: Trophy,
-      color: 'from-yellow-400 to-orange-500',
-      rank: '1st',
+      description: 'Recognized with 1st rank for exceptional user interface design skills, micro-interactions, and visual UX polish.',
+      rank: '1st Rank',
+      rankBg: 'bg-amber-50 text-amber-700 border-amber-200',
     },
     {
-      title: '3rd Prize-Head to Head Coding Battle',
+      title: '3rd Prize - Coding Battle',
       event: "Xplore'25",
       organization: "Loyola-ICAM College of Engineering and Technology",
       date: '2025',
-      description: 'Secured 3rd place in a Head to Head Coding Challenge after clearing multiple rounds of problem-solving and algorithmic tasks.',
-      icon: Trophy,
-      color: 'from-red-700 to-yellow-300',
-      rank: '1st',
+      description: 'Secured 3rd place in Head to Head Algorithmic Coding Challenge clearing multiple rounds of problem-solving.',
+      rank: '3rd Rank',
+      rankBg: 'bg-purple-50 text-[#7C3AED] border-purple-200',
     },
   ];
 
   return (
-    <section id="achievements" className="py-20 bg-gray-800">
+    <section id="achievements" className="py-24 bg-[#FAFAFA] relative">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
+        {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent leading-tight pb-2">
-            Achievements & Recognition
+          <span className="text-xs sm:text-sm font-bold tracking-[0.2em] text-[#7C3AED] uppercase block mb-3">
+            RECOGNITION & HONORS
+          </span>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-gray-900 tracking-tight mb-4">
+            Achievements & Awards
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-purple-600 to-blue-600 mx-auto rounded-full"></div>
-          <p className="text-gray-400 mt-6 max-w-2xl mx-auto">
-            Recognition for technical excellence and innovation in competitive environments
+          <div className="w-16 h-1 bg-[#7C3AED] mx-auto rounded-full mb-4" />
+          <p className="text-gray-600 max-w-2xl mx-auto text-base">
+            Recognitions earned in hackathons, product design, and algorithmic coding challenges.
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-8">
-          {achievements.map((achievement, index) => {
-            const IconComponent = achievement.icon;
-            return (
-              <div
-                key={index}
-                className="bg-gray-900 rounded-xl p-8 border border-gray-700 hover:border-purple-500 transition-all duration-300 transform hover:scale-105 relative overflow-hidden group"
-              >
-                {/* Background Gradient */}
-                <div className={`absolute top-0 right-0 w-32 h-32 bg-gradient-to-br ${achievement.color} opacity-10 rounded-full transform translate-x-16 -translate-y-16 group-hover:scale-110 transition-transform duration-300`}></div>
+        {/* Grid of Achievement Cards */}
+        <div className="grid md:grid-cols-2 gap-8 mb-16">
+          {achievements.map((item, index) => (
+            <div
+              key={index}
+              className="bg-white rounded-3xl border border-gray-200/90 p-8 shadow-sm hover:shadow-md hover:border-purple-300 transition-all duration-300 flex flex-col justify-between"
+            >
+              <div>
+                {/* Header row cleanly aligned without gap */}
+                <div className="flex items-start justify-between gap-4 mb-4">
+                  <div className="flex items-start space-x-3 flex-1 min-w-0">
+                    <div className="p-3 bg-purple-50 rounded-2xl text-[#7C3AED] shrink-0 mt-0.5">
+                      <Trophy className="w-6 h-6" />
+                    </div>
+                    <div className="flex-1 min-w-0">
+                      <h3 className="text-xl font-bold text-gray-900 leading-snug tracking-tight">
+                        {item.title}
+                      </h3>
+                      <p className="text-[#7C3AED] font-semibold text-xs mt-0.5">
+                        {item.event}
+                      </p>
+                    </div>
+                  </div>
 
-                {/* Rank Badge */}
-                <div className={`absolute top-6 right-6 w-12 h-12 bg-gradient-to-br ${achievement.color} rounded-full flex items-center justify-center text-white font-bold shadow-lg`}>
-                  {achievement.rank}
+                  <span className={`px-3 py-1 rounded-full text-xs font-extrabold border shrink-0 ${item.rankBg}`}>
+                    {item.rank}
+                  </span>
                 </div>
 
-                <div className="relative z-10">
-                  <div className="flex items-center space-x-4 mb-4">
-                    <div className={`p-3 rounded-xl bg-gradient-to-br ${achievement.color} shadow-lg`}>
-                      <IconComponent className="w-6 h-6 text-white" />
-                    </div>
-                    <div>
-                      <h3 className="text-xl font-bold text-white group-hover:text-purple-400 transition-colors">
-                        {achievement.title}
-                      </h3>
-                      <p className="text-purple-400 font-semibold">{achievement.event}</p>
-                    </div>
-                  </div>
+                <p className="text-gray-600 text-sm leading-relaxed mb-6">
+                  {item.description}
+                </p>
+              </div>
 
-                  <p className="text-gray-300 mb-6 leading-relaxed">
-                    {achievement.description}
-                  </p>
-
-                  <div className="space-y-3">
-                    <div className="flex items-center space-x-3 text-gray-400">
-                      <MapPin className="w-4 h-4 text-purple-400" />
-                      <span>{achievement.organization}</span>
-                    </div>
-                    <div className="flex items-center space-x-3 text-gray-400">
-                      <Calendar className="w-4 h-4 text-purple-400" />
-                      <span>{achievement.date}</span>
-                    </div>
-                  </div>
+              <div className="pt-4 border-t border-gray-100 flex items-center justify-between text-xs text-gray-500">
+                <div className="flex items-center space-x-1.5 truncate pr-2">
+                  <MapPin className="w-3.5 h-3.5 text-[#7C3AED] shrink-0" />
+                  <span className="truncate">{item.organization}</span>
+                </div>
+                <div className="flex items-center space-x-1.5 font-semibold text-gray-700 shrink-0">
+                  <Calendar className="w-3.5 h-3.5 text-[#7C3AED]" />
+                  <span>{item.date}</span>
                 </div>
               </div>
-            );
-          })}
+            </div>
+          ))}
         </div>
 
         {/* Stats Section */}
-        <div className="mt-16 grid grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
           {[
-            { number: '2+', label: 'Major Awards', color: 'text-yellow-400' },
-            { number: '10+', label: 'Projects Completed', color: 'text-blue-400' },
-            { number: '4+', label: 'Technologies Mastered', color: 'text-green-400' },
-            { number: '100%', label: 'Passion for Innovation', color: 'text-purple-400' },
+            { number: '6+', label: 'Hackathon Prizes' },
+            { number: '15+', label: 'Projects Completed' },
+            { number: '4+', label: 'Tech Stacks Mastered' },
+            { number: '100%', label: 'Passion & Innovation' },
           ].map((stat, index) => (
-            <div key={index} className="bg-gray-900 p-6 rounded-xl border border-gray-700 text-center">
-              <div className={`text-3xl font-bold ${stat.color} mb-2`}>{stat.number}</div>
-              <div className="text-gray-400 text-sm">{stat.label}</div>
+            <div
+              key={index}
+              className="bg-white p-6 rounded-3xl border border-gray-200/90 text-center shadow-sm hover:border-purple-300 transition-all"
+            >
+              <div className="text-3xl sm:text-4xl font-black text-[#7C3AED] mb-1">
+                {stat.number}
+              </div>
+              <div className="text-xs font-bold text-gray-600 uppercase tracking-wider">
+                {stat.label}
+              </div>
             </div>
           ))}
         </div>
