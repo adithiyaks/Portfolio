@@ -57,7 +57,7 @@ const CursorFollower = () => {
       <div className="relative flex flex-col items-start">
         {/* Mouse pointer arrow icon */}
         <svg
-          className={`w-5 h-5 text-black drop-shadow-sm transition-transform duration-150 ${
+          className={`w-8 h-8 text-black drop-shadow-sm transition-transform duration-150 ${
             isHovered ? 'scale-125 rotate-[-12deg]' : ''
           }`}
           viewBox="0 0 24 24"

@@ -122,7 +122,7 @@ const Contact = () => {
 
         {/* Footer info */}
         <div className="mt-20 pt-8 border-t border-gray-100 text-center text-xs font-semibold text-gray-400">
-          © {new Date().getFullYear()} Adithiaya Murugan K S. Designed with Soft Neo-Brutalist aesthetics.
+          © {new Date().getFullYear()} Adithiaya Murugan K S.
         </div>
       </div>
     </section>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Trophy, Calendar, MapPin } from 'lucide-react';
+import { Trophy, Calendar, MapPin, Tag } from 'lucide-react';
 
 const Achievements = () => {
   const achievements = [
@@ -9,6 +9,15 @@ const Achievements = () => {
       organization: 'SRM Institute of Science and Technology',
       date: '2026',
       description: 'Awarded 3rd prize for developing Unmuted — a smart wearable tech translating hand signs into real-time audio for the deaf and mute community.',
+      rank: '3rd Rank',
+      rankBg: 'bg-purple-50 text-[#7C3AED] border-purple-200',
+    },
+    {
+      title: '3rd Prize – ResQNet',
+      event: 'Avinya 2.0 Hackathon',
+      organization: 'SJC Institute of Technology, Karnataka',
+      date: '2026',
+      description: 'Built an AI-powered rescue route optimization system for disaster management, awarded 3rd prize at the national-level Avinya 2.0 hackathon.',
       rank: '3rd Rank',
       rankBg: 'bg-purple-50 text-[#7C3AED] border-purple-200',
     },
@@ -56,6 +65,15 @@ const Achievements = () => {
       description: 'Secured 3rd place in Head to Head Algorithmic Coding Challenge clearing multiple rounds of problem-solving.',
       rank: '3rd Rank',
       rankBg: 'bg-purple-50 text-[#7C3AED] border-purple-200',
+    },
+    {
+      title: 'Internship Prize – DEXTERX AI',
+      event: 'AIVENTRA',
+      organization: 'HACKHERE , Chennai Trade Centre',
+      date: '2026',
+      description: 'Built a multimodal, real-time AI investigation platform for law enforcement and first responders, enabling rapid forensic analysis and evidence triage.',
+      rank: 'Internship',
+      rankBg: 'bg-blue-50 text-blue-700 border-blue-200',
     },
   ];
 
@@ -111,9 +129,17 @@ const Achievements = () => {
               </div>
 
               <div className="pt-4 border-t border-gray-100 flex items-center justify-between text-xs text-gray-500">
-                <div className="flex items-center space-x-1.5 truncate pr-2">
-                  <MapPin className="w-3.5 h-3.5 text-[#7C3AED] shrink-0" />
-                  <span className="truncate">{item.organization}</span>
+                <div className="flex items-center gap-2 truncate pr-2 flex-1 min-w-0">
+                  <div className="flex items-center space-x-1.5 truncate">
+                    <MapPin className="w-3.5 h-3.5 text-[#7C3AED] shrink-0" />
+                    <span className="truncate">{item.organization}</span>
+                  </div>
+                  {(item as any).tag && (
+                    <span className="shrink-0 px-2 py-0.5 bg-indigo-50 text-indigo-700 border border-indigo-200 rounded-full text-[9px] font-extrabold tracking-widest uppercase flex items-center gap-1">
+                      <Tag className="w-2.5 h-2.5" />
+                      {(item as any).tag}
+                    </span>
+                  )}
                 </div>
                 <div className="flex items-center space-x-1.5 font-semibold text-gray-700 shrink-0">
                   <Calendar className="w-3.5 h-3.5 text-[#7C3AED]" />
@@ -127,8 +153,8 @@ const Achievements = () => {
         {/* Stats Section */}
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
           {[
-            { number: '6+', label: 'Hackathon Prizes' },
-            { number: '15+', label: 'Projects Completed' },
+            { number: '8+', label: 'Competition Wins' },
+            { number: '18+', label: 'Projects Completed' },
             { number: '4+', label: 'Tech Stacks Mastered' },
             { number: '100%', label: 'Passion & Innovation' },
           ].map((stat, index) => (

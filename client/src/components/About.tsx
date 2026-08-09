@@ -42,7 +42,7 @@ const About = () => {
         {/* Intro Paragraph */}
         <div className="text-center max-w-2xl mx-auto mb-12 space-y-4">
           <p className="text-lg sm:text-xl text-gray-700 leading-relaxed font-medium">
-            <span className="text-[#7C3AED] font-bold">I'm Adithiaya</span>, a full-stack developer and AI researcher passionate about crafting impactful solutions. Currently focusing on <strong className="text-gray-900 font-bold">Flutter Mobile Apps</strong>, <strong className="text-gray-900 font-bold">Python AI/ML</strong>, and <strong className="text-gray-900 font-bold">Hardware Innovations</strong>.
+            <span className="text-[#7C3AED] font-bold">I'm Adithiaya</span>, a full-stack developer and creator passionate about crafting impactful solutions. Currently focusing on <strong className="text-gray-900 font-bold">Flutter Mobile Apps</strong>, <strong className="text-gray-900 font-bold">Python AI/ML</strong>, and <strong className="text-gray-900 font-bold">Hardware Innovations</strong>.
           </p>
           <p className="text-base sm:text-lg text-gray-500 leading-relaxed">
             I thrive with <strong className="text-gray-800 font-semibold">research</strong>, creating solutions for real-world impact, and love to hear "that's awesome!" when someone spots a <strong className="text-gray-800 font-semibold">micro-animation</strong> or feature I made.
